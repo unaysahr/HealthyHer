@@ -1,0 +1,13 @@
+prefix=/Users/humeraron/vscode/caloriesadvisor/venv
+exec_prefix=/Users/humeraron/vscode/caloriesadvisor/venv
+libdir=/Users/humeraron/vscode/caloriesadvisor/venv/lib
+sharedlibdir=/Users/humeraron/vscode/caloriesadvisor/venv/lib
+includedir=/Users/humeraron/vscode/caloriesadvisor/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
