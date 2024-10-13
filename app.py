@@ -30,10 +30,20 @@ def input_image_setup(uploaded_file):
 
 ##initialize our streamlit app
 
-st.set_page_config(page_title="Gemini Health App")
+#st.set_page_config(page_title="HealthyHer")
 
-st.header("Gemini Health App")
-input=st.text_input("Input Prompt: ",key="input")
+#st.header("HealthyHer")
+
+# Path to the AI-generated image
+ai_image_path = "/Users/humeraron/Downloads/HealthyHer.jpeg"  # Update this path to your actual image name
+if os.path.exists(ai_image_path):
+    ai_image = Image.open(ai_image_path)
+    st.image(ai_image, caption="AI-Generated Image", use_column_width=True)
+else:
+    st.write("AI-generated image not found. Please check the path.")
+
+#input=st.text_input("Input Prompt: ",key="input")
+#File Uploader
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
 if uploaded_file is not None:
@@ -41,7 +51,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image.", use_column_width=True)
 
 
-submit=st.button("Tell me the total calories")
+submit=st.button("Is It Healthy Or Not ?")
 
 input_prompt="""
 You are an expert in nutritionist where you need to see the food items from the image
