@@ -46,7 +46,7 @@ To run this project locally, you'll need the following:
 
 First, clone this repository to your local machine:
 
-git clone https://github.com/unaysahr/HealthyHer.git
+```git clone https://github.com/unaysahr/HealthyHer.git```
 cd HealthyHer
 
 2. Set Up a Virtual Environment (optional but recommended)
