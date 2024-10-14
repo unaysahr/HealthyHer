@@ -47,12 +47,14 @@ To run this project locally, you'll need the following:
 First, clone this repository to your local machine:
 
 ```git clone https://github.com/unaysahr/HealthyHer.git```
-cd HealthyHer
+
+```cd HealthyHer```
 
 2. Set Up a Virtual Environment (optional but recommended)
 Create and activate a virtual environment to keep your dependencies isolated:
-```python -m venv venv
-source venv/bin/activate  # On macOS/Linux```
+```python -m venv venv```
+
+```source venv/bin/activate  # On macOS/Linux```
 # On Windows, use `venv\Scripts\activate`
 
 3. Install Dependencies
