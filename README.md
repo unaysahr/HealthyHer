@@ -55,7 +55,7 @@ Create and activate a virtual environment to keep your dependencies isolated:
 ```python -m venv venv```
 
 ```source venv/bin/activate  # On macOS/Linux```
-# On Windows, use `venv\Scripts\activate`
+On Windows, use `venv\Scripts\activate`
 
 3. Install Dependencies
 Install the required dependencies listed in the requirements.txt file:
