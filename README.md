@@ -45,28 +45,27 @@ To run this project locally, you'll need the following:
 ### 1. Clone the Repository
 First, clone this repository to your local machine:
 
-```bash
-git clone https://github.com/unaysahr/HealthyHer.git
-cd HealthyHer
+```git clone https://github.com/unaysahr/HealthyHer.git
+cd HealthyHer```
 
 ### 2. Set Up a Virtual Environment (optional but recommended)
 Create and activate a virtual environment to keep your dependencies isolated:
-python -m venv venv
-source venv/bin/activate  # On macOS/Linux
+```python -m venv venv
+source venv/bin/activate  # On macOS/Linux```
 # On Windows, use `venv\Scripts\activate`
 
 ### 3. Install Dependencies
 Install the required dependencies listed in the requirements.txt file:
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ### 4. Configure Environment Variables
 You'll need to create a .env file in the root of the project directory to store your Google Gemini API key and any other sensitive information. The format of the .env file should look like this:
-GOOGLE_API_KEY=your-google-gemini-api-key-here
+```GOOGLE_API_KEY=your-google-gemini-api-key-here```
 Make sure you have a valid API key from Google.
 
 ### 5. Running the Application
 After setting up your environment, run the application using Streamlit:
-streamlit run app.py
+```streamlit run app.py```
 
 The application will be available at http://localhost:8501.
 
